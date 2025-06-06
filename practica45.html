@@ -1,0 +1,46 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica 45</title>
+<h1 align="center"><font face="French Script MT" size="30" color="87CEEB">
+Venta de Casas</font></h1>
+  <script>
+    function mostrarInformacion(info) {
+      const contenido = {
+        presupuesto: 'Promedio en México, en 2025, cuesta entre 3 y 6 millones de pesos...',
+        modelos: '<ul><li>Contemporáneo</li><li>Minimalista</li><li>Rústico</li><li>Cottage</li></ul>',
+        imagenes: '<p><img src="imagenes/casa1.jpg" width="80" height="100" alt="Casa 1"> Casa 1</p><p><img src="imagenes/casa2.jpg" width="80" height="100" alt="Casa 2"> Casa 2</p><p><img src="imagenes/casa3.jpg" width="80" height="100" alt="Casa 3"> Casa 3</p>',
+        ubicacion: '<ul><li>Casa 1: Acatitlán con jardín, zona tranquila y vista al campo, Valle de Bravo, Edo. de México</li><li>Casa 2: Nte. 87, Sindicato Mexicano de Electricistas, Ciudad de México</li><li>Casa 3: Jardines del Pedregal, Álvaro Obregón, Distrito Federal</li></ul>',
+        masInfo: 'Trato directo...'
+      };
+      document.getElementById('contenido').innerHTML = contenido[info];
+    }
+  </script>
+</head>
+<body>
+  <center>
+    <table border="1">
+      <tr>
+        <td><a href="javascript:void(0);" onclick="mostrarInformacion('presupuesto')">Presupuesto</a></td>
+        <td rowspan="5" id="contenido">Selecciona una opción para ver la información aquí.</td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0);" onclick="mostrarInformacion('modelos')">Tipo de modelos</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0);" onclick="mostrarInformacion('imagenes')">Imágenes</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0);" onclick="mostrarInformacion('ubicacion')">Ubicación</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0);" onclick="mostrarInformacion('masInfo')">+Información</a></td>
+      </tr>
+    </table>
+  </center>
+  <br><br><br><br><br>
+  <marquee><font face="Comic Sans MS" size="5" color="purple">"Más que casas, creamos hogares llenos de vida"</font></marquee>
+</body>
+</html>
